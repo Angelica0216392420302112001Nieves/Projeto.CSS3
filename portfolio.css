@@ -1,0 +1,287 @@
+{
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  
+  .header {
+    width: 1500px;
+    background-color: #060606;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_imagem {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 25px;
+  }
+  
+  .logo_conteudo {
+    color: #ffffff;
+  font-size: 40px;
+  background-color: #7C0135;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+  
+  .avatar_imagem {
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+  }
+  
+  .container_logo {
+    display: flex;
+    aign-items: center;
+  }
+  
+  .logo_texto {
+    margin-left: 30px;
+    color: black;
+    border-color: transparent;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin: 1 10px;
+  }
+  
+  .menu li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    background-color: pink;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border-color: transparent;
+  }
+  
+  .menu li a:hover{
+    background-color: rgba(100, 100, 100, 0.8)
+  }
+  
+  .portada {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cabecalho {
+    display: flex;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  
+  .perfil {
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    bottom: 70px;
+    margin-bottom: -20%;
+    
+  }
+
+  .nome {
+    font-family:'Roboto', sans-serif;
+    position: relative;
+    right: -30px;
+    top: 60px;
+  }
+
+  .sub_2 {
+    font-family:'Roboto', sans-serif;
+    font-size: small;
+    position: relative;
+    right: -30px;
+    top: 60px;
+  }
+  
+  .sobremim,
+  .objetivos,
+  .projetos {
+    font-size: 30px;
+    color:#C00B5B;
+    margin-top: 3%;
+  }
+  
+  .card_1,
+  .card_2,
+  .card_3 {
+    display: inline-block;
+    height: 300px;
+    width: 225px;
+    border-radius: 4px;
+    background-color: rgb(231, 178, 172);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
+    overflow: hidden;
+    margin-top: 2%;
+  }
+  
+  .margem {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .meio {
+    text-align: justify;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+  
+  .rodape {
+    background-color: #AC3B46;
+    border-radius: 4px;
+    padding: 1px 200px;
+    width: 1500px;
+  }
+  
+  .links {
+      right: 50%;
+    }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html,
+  body {
+    display: grid;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+  }
+  
+  .wrapper {
+    display: inline-flex;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    left: 272px; 
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .header, .meio {
+     width: 100%;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu li {
+      float: none;
+      text-align:center;
+      width: 100%;
+    }
+  }
